@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Jinja2 Demo</title>
+</head>
+<body>  
+    <h3>Users:</h3>
+    <p>
+        <ul>
+        {% for uid, name in users.items() %}
+        {% if name != "Admin" %}
+        <li>{{name}}</li>
+        {% endif %}
+        {% endfor %}
+        </ul>
+    </p>
+</body>
+</html>
